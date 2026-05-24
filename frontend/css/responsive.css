@@ -1,0 +1,47 @@
+@media (max-width: 900px) {
+  .header-main,
+  .hero-grid,
+  .page-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-main {
+    flex-wrap: wrap;
+    padding: 18px 0;
+  }
+
+  .search-form {
+    order: 3;
+    max-width: none;
+    width: 100%;
+  }
+
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters,
+  .cart-item {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 44px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .category-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-bar,
+  .header-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

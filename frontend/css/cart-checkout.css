@@ -1,0 +1,67 @@
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+.cart-item:first-child {
+  padding-top: 0;
+}
+
+.cart-item img {
+  width: 110px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty button {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--blue-soft);
+  cursor: pointer;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.summary-total {
+  border-top: 1px solid var(--line);
+  margin-top: 10px;
+  padding-top: 18px;
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+}

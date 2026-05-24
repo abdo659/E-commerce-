@@ -1,0 +1,17 @@
+.footer {
+  background: var(--ink);
+  color: white;
+  padding: 38px 0;
+  margin-top: 64px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer a,
+.footer p {
+  color: #d1d5db;
+}

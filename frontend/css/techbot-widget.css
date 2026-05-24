@@ -1,0 +1,142 @@
+.techbot-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 50;
+  font-family: inherit;
+}
+
+.techbot-panel {
+  position: absolute;
+  right: 0;
+  bottom: 76px;
+  width: min(380px, calc(100vw - 32px));
+  height: min(560px, calc(100vh - 120px));
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.24);
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.techbot-widget.open .techbot-panel {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.techbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, #1f66d6, #347ff0);
+  color: #fff;
+}
+
+.techbot-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.techbot-avatar {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.techbot-title strong,
+.techbot-title span {
+  display: block;
+  line-height: 1.2;
+}
+
+.techbot-title span {
+  margin-top: 2px;
+  font-size: 12px;
+  opacity: 0.88;
+}
+
+.techbot-close,
+.techbot-launcher {
+  display: grid;
+  place-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.techbot-close {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.techbot-close:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.techbot-chat {
+  display: block;
+  width: 100%;
+  height: calc(100% - 64px);
+  border: 0;
+}
+
+.techbot-launcher {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: #1f66d6;
+  color: #fff;
+  box-shadow: 0 16px 36px rgba(31, 102, 214, 0.38);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.techbot-launcher:hover {
+  transform: translateY(-2px);
+  background: #1556be;
+  box-shadow: 0 20px 42px rgba(31, 102, 214, 0.46);
+}
+
+.techbot-launcher svg,
+.techbot-close svg,
+.techbot-avatar svg {
+  width: 24px;
+  height: 24px;
+}
+
+.techbot-widget.open .techbot-launcher .techbot-open-icon,
+.techbot-launcher .techbot-close-icon {
+  display: none;
+}
+
+.techbot-widget.open .techbot-launcher .techbot-close-icon {
+  display: block;
+}
+
+@media (max-width: 560px) {
+  .techbot-widget {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .techbot-panel {
+    right: -8px;
+    bottom: 74px;
+    width: calc(100vw - 32px);
+    height: min(560px, calc(100vh - 106px));
+  }
+}

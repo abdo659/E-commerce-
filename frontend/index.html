@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techtronic Electronic Commerce</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-main">
+      <a class="logo" href="index.html">TECH<span>TRONIC</span><small>Electronic Commerce</small></a>
+      <form class="search-form" action="shop.html">
+        <input name="search" placeholder="Type here">
+        <button>Search</button>
+      </form>
+      <div class="header-actions">
+        <a class="cart-link" href="cart.html" title="Cart">&#128722;<span class="cart-count" data-cart-count>0</span></a>
+        <div class="account-actions" data-auth-area></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav-bar">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>THE PRODUCT OF THE FUTURE</h1>
+        <p>Discover the latest electronics, smart devices, laptops, accessories, and audio products in one clean online store.</p>
+        <div class="button-row">
+          <a class="white-btn" href="shop.html">BUY NOW</a>
+          <a class="outline-btn" href="#categories">BROWSE CATEGORIES</a>
+        </div>
+      </div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Smart watch">
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container">
+      <h2>INTRODUCING <span>TECH</span>TRONIC</h2>
+      <p>Buy the latest electronics. The best electronics for tech lovers.</p>
+      <a class="white-btn" href="shop.html">SHOP NOW</a>
+    </div>
+  </section>
+
+  <section class="category-section" id="categories">
+    <div class="container">
+      <h2>BROWSE CATEGORIES</h2>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>FEATURED PRODUCTS</h2>
+        <p>Explore popular electronics selected for everyday shopping.</p>
+      </div>
+      <div class="product-grid" id="featuredProducts"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>TECHTRONIC</h2>
+        <p>Smart phones, laptops, watches, audio devices, and computer accessories.</p>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <p><a href="shop.html">All Products</a></p>
+        <p><a href="cart.html">Cart</a></p>
+      </div>
+      <div>
+        <h3>Account</h3>
+        <p><a href="login.html">Login</a></p>
+        <p><a href="register.html">Register</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/techbot-widget.js"></script>
+</body>
+</html>

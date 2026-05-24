@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Techtronic</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header"><div class="container header-main"><a class="logo" href="index.html">TECH<span>TRONIC</span><small>Electronic Commerce</small></a><form class="search-form" action="shop.html"><input name="search" placeholder="Type here"><button>Search</button></form><div class="header-actions"><a class="cart-link" href="cart.html" title="Cart">&#128722;<span class="cart-count" data-cart-count>0</span></a><div class="account-actions" data-auth-area></div></div></div></header>
+  <nav class="nav"><div class="container nav-bar"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="cart.html">Cart</a></div></nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title"><h1>SHOPPING CART</h1></div>
+      <div class="page-grid">
+        <div class="panel" id="cartItems"></div>
+        <aside class="panel" id="cartSummary"></aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container footer-grid"><div><h2>TECHTRONIC</h2><p>Electronics for every setup.</p></div><div><h3>Shop</h3><p><a href="shop.html">All Products</a></p></div><div><h3>Account</h3><p><a href="login.html">Login</a></p></div></div></footer>
+  <script src="js/config.js"></script><script src="js/demo-data.js"></script><script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/cart.js"></script><script src="js/cart-page.js"></script>
+  <script src="js/techbot-widget.js"></script>
+</body>
+</html>

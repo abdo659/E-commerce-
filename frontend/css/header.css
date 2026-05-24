@@ -1,0 +1,129 @@
+.header {
+  background: white;
+  border-bottom: 1px solid var(--line);
+}
+
+.header-main,
+.nav-bar,
+.header-actions,
+.account-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-main {
+  min-height: 86px;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 850;
+  letter-spacing: 0.5px;
+  line-height: 0.95;
+}
+
+.logo span {
+  color: var(--blue);
+}
+
+.logo small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+.search-form {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.search-form input {
+  border: 0;
+  flex: 1;
+  min-width: 0;
+  padding: 13px 16px;
+}
+
+.search-form button {
+  width: 92px;
+  border: 0;
+  background: var(--blue);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.header-actions {
+  gap: 14px;
+}
+
+.cart-link {
+  position: relative;
+  font-size: 24px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f8fbff;
+  color: var(--blue-dark);
+  line-height: 1;
+}
+
+.cart-count {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background: var(--blue);
+  color: white;
+  border-radius: 999px;
+  min-width: 20px;
+  height: 20px;
+  display: none;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.account-actions {
+  gap: 8px;
+}
+
+.account-btn {
+  min-height: 42px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--blue);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(52, 127, 240, 0.22);
+}
+
+.nav {
+  background: var(--blue-dark);
+  color: white;
+}
+
+.nav-bar {
+  min-height: 48px;
+  justify-content: center;
+  gap: 18px;
+  font-weight: 800;
+}
+
+.nav-bar a {
+  padding: 15px 18px;
+}
